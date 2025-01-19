@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="playerFormWrapper">
+
+        <h1>Tic-Tac-Toe</h1>
+
+        <form id="playerForm">
+
+            <h1>Enter Player Names : </h1>
+
+            <div class="playersWrapper">
+                <div class="playersForm">
+                    <h2>Player 1</h2>
+                    <img src="images/char.png">
+                    <input type="text" placeholder="Player 1" id="playerOneName">
+                </div>
+
+                <h3>VS</h3>
+
+                <div class="playersForm">
+                    <h2>Player 2</h2>
+                    <img src="images/char.png">
+                    <input type="text" placeholder="Player 2" id="playerTwoName">
+                </div>
+            </div>
+
+            <button>Start!</button>
+
+        </form>
+
+    </div>
+
+    <div class="game">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="game-container">
+            <div class="playerTurn">
+                <h2 id="turnInfoOne"></h2>
+                <h1 id="playerOneTurnInfo"></h1>
+                <img src="images/char.png">
+            </div>
+
+            <div class="game-cells">
+                <div class="cell" data-row="0" data-col="0"></div>
+                <div class="cell" data-row="0" data-col="1"></div>
+                <div class="cell" data-row="0" data-col="2"></div>
+                <div class="cell" data-row="1" data-col="0"></div>
+                <div class="cell" data-row="1" data-col="1"></div>
+                <div class="cell" data-row="1" data-col="2"></div>
+                <div class="cell" data-row="2" data-col="0"></div>
+                <div class="cell" data-row="2" data-col="1"></div>
+                <div class="cell" data-row="2" data-col="2"></div>
+            </div>
+
+            <div class="playerTurn">
+                <h2 id="turnInfoTwo"></h2>
+                <h1 id="playerTwoTurnInfo"></h1>
+                <img src="images/char.png">
+            </div>
+        </div>
+
+        <button onclick="resetGame()">Reset</button>
+
+        
+    </div>
+
+    <div class="result">
+        <h1 id="gameResult"></h1>
+    </div>
+
+    <footer>
+        <p>Build by <a href="https://github.com/BossNattawat" target="_blank">BossNattawat</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
